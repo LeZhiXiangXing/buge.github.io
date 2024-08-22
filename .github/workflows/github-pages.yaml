@@ -1,6 +1,7 @@
 name: Github Pages Deploy
 run-name: Deploy by @${{ github.actor }}
-
+permissions:
+  contents: write
 on:
   push:
     branches: 
