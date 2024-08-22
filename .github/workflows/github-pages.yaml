@@ -37,7 +37,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
-      安装依赖 yarn
+      # 安装依赖 yarn
       - name: Install dependencies
         # 如果没有命中缓存才执行 npm install
         if: steps.npm-cache.outputs.cache-hit != 'true'
