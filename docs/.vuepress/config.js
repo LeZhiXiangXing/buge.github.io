@@ -27,31 +27,10 @@ module.exports = {
     editLinks: true,
     editLinkText: '帮助我改善此页面！',
     lastUpdated: '上次更新',
-    nav: [{
-      text: '主页',
-      link: '/',
-      },
+    nav: [
       {
-        text: '博文',
-        items: [
-          { text: 'Java', link: '/java/' },
-          { text: 'Kotlin', link: '/kotlin/' }
-        ]
+        text: '主页', link: '/',
       },
-      { text: '关于', link: '/about/' },
-      { text: 'Github', link: 'https://www.github.com/ZweiRm' },
     ],
-    sidebar: {
-      '/java/': [
-        '',
-        'grammar',
-        'object-oriented',
-        'application-programming-interface'
-      ],
-      '/kotlin/': [
-          '',
-      ]
-    },
-    sidebarDepth: 2
   }
 }
