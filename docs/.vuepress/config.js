@@ -1,6 +1,6 @@
 module.exports = {
   title: '好习惯 用步鸽',
-  description: '早起 · 好睡 · 看书 · 运动 · 冥想 · 专注',
+  description: '早起 · 好睡 · 看书 · 运动 · 冥想 · 专注 · 健康',
   head: [
     ['link', { rel: 'icon', href: '/img/favicon.ico' }]
   ],
