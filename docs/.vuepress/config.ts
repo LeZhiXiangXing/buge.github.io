@@ -5,12 +5,12 @@ import footer from "./footer";
 import extraSideBar from "./extraSideBar";
 
 const author = "程序员鱼皮";
-const domain = "https://codefather.cn";
+const domain = "https://docs.bugelife.com/";
 const tags = ["程序员", "编程", "计算机"];
 
 export default defineConfig({
-  title: "鱼皮的编程宝典",
-  description: "贴心的编程学习路线，全面的编程知识百科",
+  title: "步鸽",
+  description: "好习惯 用步鸽",
   head: [
     // 站点图标
     ["link", { rel: "icon", href: "/favicon.ico" }],
