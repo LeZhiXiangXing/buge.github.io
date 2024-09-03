@@ -1,9 +1,5 @@
 {
-<<<<<<< Updated upstream
-  "name": "buge",
-=======
   "name": "codefather",
->>>>>>> Stashed changes
   "version": "1.0.0",
   "scripts": {
     "docs:dev": "vuepress dev .",
