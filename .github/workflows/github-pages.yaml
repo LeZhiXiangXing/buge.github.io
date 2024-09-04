@@ -22,26 +22,26 @@ jobs:
         with:
           node-version: '16'
 
-      # 缓存 yarn node_modules
+      # 缓存 npm node_modules
       - name: Cache dependencies
         uses: actions/cache@v4
-        id: yarn-cache
+        id: npm-cache
         with:
           path: |
             **/node_modules
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
-            ${{ runner.os }}-yarn-
+            ${{ runner.os }}-npm-
 
-      # 安装依赖 yarn
+      # 安装依赖 npm
       - name: Install dependencies
         # 如果没有命中缓存才执行 npm install
         if: steps.npm-cache.outputs.cache-hit != 'true'
-        run: yarn --frozen-lockfile
+        run: npm install
 
       # 运行构建脚本
       - name: Run Build Script
-        run: yarn docs:build
+        run: npm run docs:build
 
       # 部署到 GitHub Pages
       - name: Deploy to GitHub Pages
