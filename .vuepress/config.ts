@@ -2,7 +2,7 @@ import { defineConfig } from "vuepress/config";
 import navbar from "./navbar";
 import sidebar from "./sidebar";
 import footer from "./footer";
-import extraSideBar from "./extraSideBar";
+// import extraSideBar from "./extraSideBar";
 
 const author = "步鸽";
 const domain = "https://docs.bugelife.com";
@@ -132,6 +132,6 @@ export default defineConfig({
     // 底部版权信息
     footer,
     // 额外右侧边栏
-    extraSideBar,
+    // extraSideBar,
   },
 });
