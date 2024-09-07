@@ -3,6 +3,7 @@ import navbar from "./navbar";
 import sidebar from "./sidebar";
 import footer from "./footer";
 import extraSideBar from "./extraSideBar";
+import markdownItTaskLists from 'markdown-it-task-lists';
 
 const author = "步鸽";
 const domain = "https://docs.bugelife.com";
@@ -47,6 +48,10 @@ export default defineConfig({
     lineNumbers: true,
     // 支持 4 级以上的标题渲染
     extractHeaders: ["h2", "h3", "h4", "h5", "h6"],
+    extendMarkdown: md => {
+      // 使用 markdown-it-task-lists 插件
+      md.use(markdownItTaskLists)
+    },
   },
   // @ts-ignore
   plugins: [
