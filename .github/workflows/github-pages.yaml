@@ -39,6 +39,10 @@ jobs:
         if: steps.npm-cache.outputs.cache-hit != 'true'
         run: npm install
 
+     # 检查已安装的依赖项 
+      - name: Check Installed Packages
+        run: npm list
+
       # 运行构建脚本
       - name: Run Build Script
         run: npm run docs:build
